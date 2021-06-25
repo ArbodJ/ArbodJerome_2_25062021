@@ -3,6 +3,9 @@
       <head>
          <meta charset="UTF-8">
          <link rel="stylesheet" href="style.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
          <title>Reservia</title>
       </head>
 
@@ -13,5 +16,40 @@
             <a href="">Activités</a>
             <a href="">S'inscrire</a>
          </header>
+
+         <section class="hebergement">
+            <div id="menu">
+               <div id="titre">
+                  <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                  <p>En plein centre ville ou en pleine nature</p>
+               </div>
+
+               <div id="search">
+                  <label for="site-search"><img class="position" src="images/logo/map-marker-alt-solid.svg" alt="position" /></label>
+                  <input type="search" id="site-search" name="q" aria-label="Search through site content" />
+                  <button>Rechercher</button>
+               </div>
+
+               <div id="filter">
+                  <p>Filtres
+                     <form method="" action="">
+                        <p>
+                           <label for="site-search"><img class="money"src="images/logo/money-bill-wave-solid.svg" alt=""/></label>
+                           <input type="search" name="eco" id="eco" value="economique" />
+
+                           <label for="site-search"><img class="family"src="images/logo/child-solid.svg" alt=""/></label>
+                           <input type="search" name="eco" id="family" value="Familial" />
+
+                           <label for="site-search"><img class="heart"src="images/logo/heart-solid.svg" alt=""/></label>
+                           <input type="search" name="heart" id="heart" value="Romantique" />
+
+                           <label for="site-search"><img class="pet"src="images/logo/dog-solid.svg" alt=""/></label>
+                           <input type="search" name="pet" id="pet" value="Animaux autorisés" />
+                        </p>
+                     </form>   
+                  </p>
+               </div>
+            </div>   
+         </section>
       </body>
    </html>
