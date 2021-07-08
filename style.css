@@ -13,6 +13,7 @@ body
 }
 /* mise en place du header */
 /*Logo est lienancre*/
+
 img/*logo -Reservia- */
 {
    width: 80px;
@@ -27,25 +28,35 @@ img/*logo -Reservia- */
    height: 90px;
 }
 /* Liens ancre */
+nav
+{
+   display: flex;
+   flex-direction: row;
+}
 #ancre
 {
-   width: 500px;
-   height: 120px;
+   margin-left: auto;
+   width: 100%;
+   height: 90px;
 }
 
-ul
+#ancre ul
 {
-   width: 385px;
-   height: 56px;
+   width: auto;
+   height: 55px;
+   margin-top: 10px;
    padding: 0 44px 0 0;
    display: flex;
    flex-direction: row;
    justify-content: space-around;
+   justify-content: flex-end;
 }
-li
+#ancre li
 {
    display: flex;
    align-items: center;
+   margin-left: 45px;
+   padding-right: 60px;
 }
 #ancre a
 {
@@ -53,23 +64,35 @@ li
    color: #0065FC;
    text-decoration: none;
    height: 68px;
-   border-top: 3px rgb(252, 252, 252) solid;
+   border-top: 3px #fff solid;
    
 }
-.fixed
+p#fixed
 {
-   height: 98px;
-   position: absolute;
-   top: 26px;
-   right: 70px;
+   margin-top: 0px;  
 }
-a, .fixed 
+
+#fixed a
 {
    color: #0065FC;
+   text-decoration: none;
+   height: 68px;
+   border-top: 3px #fff solid;
+   float: right;
+   margin-top: 2px;
    display: flex;
    align-items: center;
 }
-.fixed a:hover
+a 
+{
+   display: flex;
+   align-items: center;
+}
+#fixed a:hover
+{
+   border-color: #0065FC;
+}
+#ancre a:hover
 {
    border-color: #0065FC;
 }
@@ -130,8 +153,10 @@ form
 /*Menu Filtres*/
 #filtre
 {
+   width: 100%;
    display: flex;
    align-items: center;
+   flex-wrap: wrap;
 }
 /*Titre du menu Filtres*/
 p.fil
@@ -265,7 +290,7 @@ article /*Generalites*/
 {
    background-color: #F2F2F2;
    border-radius: 15px;
-   width: 890px;
+   width: 68%;
    height: 630px;
 }
 article p
@@ -282,7 +307,8 @@ h3.lieu /*Titre*/
    height: 525px;
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-evenly;
+   justify-content: space-around;
+   align-content: space-between
 }
 .legende
 {
@@ -439,11 +465,13 @@ aside /*Generalites*/
 {
    background-color: #F2F2F2;
    border-radius: 15px;
-   width: 440px;
+   margin-left: 3%;
+   width: 420px;
    height: 630px;
 }
 aside p.prix
 {
+   width: 125px;
    font-size: 14px;
 }
 .side
@@ -468,6 +496,7 @@ h3.pop, i.fas.fa-chart-line
 i.fas.fa-chart-line
 {
    font-size: 20px;
+   margin-right: 17px;
 }
 .p2 
 {
@@ -727,6 +756,7 @@ footer
 #sizeFoot li
 {
    margin: 5px 0;
+   list-style: none;
 }
 #sizeFoot
 {
@@ -737,6 +767,7 @@ footer
 }
 #sizeFoot h4
 {
+   width: 150px;
    margin: 37px 0px 3px 0;
 }
 /*1ere list*/
@@ -744,10 +775,11 @@ footer
 {
    display: flex;
    flex-direction: column;
+   margin-left: 40px;
 }
 #propos ul
 {
-   margin: 36px 0;
+   margin: 10px 20px 0 -20px;
    display: flex;
    flex-direction: column;
    align-content: flex-start;
@@ -760,12 +792,13 @@ footer
 /*2eme list*/
 #loyer
 {
+   margin-left: 40px;
    display: flex;
    flex-direction: column
 }
 #loyer ul
 {
-   margin: 20px 0;
+   margin: 10px 20px 0 -20px;
    display: flex;
    flex-direction: column;
    align-content: flex-start;
@@ -778,12 +811,13 @@ footer
 /*3eme list*/
 #assista
 {
+   margin-left: 40px;
    display: flex;
    flex-direction: column
 }
 #assista ul
 {
-   margin: 20px 0;
+   margin: 10px 20px 0 -20px;
    display: flex;
    flex-direction: column;
    align-content: flex-start;
@@ -793,4 +827,150 @@ footer
    text-decoration: none;
    color: black;
 }
+/*--- PARTIE du RESPONSIVE ---*/
+@media (max-width: 1221px)
+{
+   /*Partie ville block hebergement*/
+   #ville
+   {
+      height: 890px;
+   }
+   #hebergement
+   {
+      height: 890px;
+   }
+   #photo1
+   {
+      height: 787px;
+      display: flex;
+      align-content: space-between;
+      justify-content: space-evenly;
+   }
+   /*block populaire*/
+   aside
+   {
+      width: 327px;
+      height: 890px;
+      margin-right: 35px;
+   }
+   .p2
+   {
+      margin: 95px 20px 0px 20px;
+   }
+   .p2 h4 p
+   {
+      font-size: 5vw;
+   }
+   #titrePop
+   {
+      width: 302px;
+   }
+   i.fas.fa-chart-line
+   {
+      margin-right: 20px;
+   }
+   aside h4
+   {
+      width: 125px;
+   }
+   p.note
+   {
+      margin: -24px auto;
+   }
+   /*footer*/
+   footer
+   {
+    top: 1729px;
+   }
+}
+
+@media (max-width: 804px)
+{
+   /*Filtre*/
+   a.eco 
+   {
+      font-weight: bold;
+      text-decoration: none;
+      border: #DEEBFF 1px solid;
+      border-radius: 32px;
+      height: 33px;
+      width: 143px;
+      margin: 5px 25px 5px 25px;
+   }
+   a.fam 
+   {
+      font-weight: bold;
+      text-decoration: none;
+      border: #DEEBFF 1px solid;
+      border-radius: 32px;
+      height: 33px;
+      width: 143px;
+      margin: 5px 25px 5px 25px;
+   }
+   a.rom 
+   {
+         font-weight: bold;
+         text-decoration: none;
+         border: #DEEBFF 1px solid;
+         border-radius: 32px;
+         height: 33px;
+         width: 143px;
+         margin: 5px 25px 5px 25px;
+   }
+   a.ani
+   {
+      font-weight: bold;
+      text-decoration: none;
+      border: #DEEBFF 1px solid;
+      border-radius: 32px;
+      height: 33px;
+      width: 143px;
+      margin: 5px 25px 5px 25px;
+   }
+   /*Replacement de la partie Hebergement*/
+   #ville
+   {
+      height: 2300px;
+      display: flex;
+      flex-wrap: wrap-reverse;
+      align-content: flex-end;
+      justify-content: center;
+   }
+   #hebergement
+   {
+      margin-top: 20px;
+      height: 1625px;
+   }
+   aside 
+   {
+      width: 327px;
+      height: 620px;
+      margin-right: 35px;
+   }
+   .p2
+   {
+      margin: 15px 20px 0 20px;
+   }
+   .p1
+   {
+      margin-top: 15px;
+   }
+   a#plus
+   {
+      margin: 32px 367px 0 0;
+   }
+   /*Partie activites*/
+   #blockPage
+   {
+      margin-top: 15px;
+   }
+   /*Pied de page*/
+   footer
+   {
+      height: 184px;
+      top: 3195px;
+      margin-top: 15px;
+   }
+}
+
 
