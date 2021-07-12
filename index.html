@@ -13,24 +13,32 @@
 
       <body>
          <div id="page">
-            <header> <!--Entete du site-->
+            <!--Entete de page-->
+            <header>
+               <!-- Block logo et liens ancres--> 
                <div id="logo-ancre">
-                  <img src="images/logo/Reservia.svg" alt="logo" />
-                  <nav id="lienAncre">
-                     <div id="ancre">
-                        <ul>
-                           <li><a href="#ville">Hébergements</a></li>
-                           <li><a href="#activ">Activités</a></li>  
-                        </ul>
-                     </div>
-                           <p id="fixed"><a href="#sign-in">S'inscrire</a></p>       
-                  </nav>
-                  
+                  <!--Titre-->
+                  <img id="logo" src="images/logo/Reservia.svg" alt="logo" />
+                  <div id="navp">
+                     <!--Liens ancres-->
+                     <nav id="lienAncre">
+                        <div id="ancre">
+                           <ul>
+                              <li><a href="#ville">Hébergements</a></li>
+                              <li><a href="#activ">Activités</a></li>  
+                           </ul>
+                        </div>       
+                     </nav>
+                     
+                  </div>
+                  <p id="fixe"><a href="#foot">S'inscrire</a></p>
                </div>
+               <!--Slogan du site-->
                <div id="slogan">
                   <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
                   <p>En plein centre ville ou en pleine nature</p>
                </div>
+               <!--Barre de recherche-->
                <div id="search">
                   <form action="#" method="post">
                      <label for="map"></label>
@@ -39,6 +47,7 @@
                      <button class="button" type="submit">Rechercher</button>
                   </form>
                </div>
+               <!--Filtres de recherche-->
                <div id="filtre">
                   <p class="fil">Filtres</p>
                   <a class="eco" href="#"><i class="fas fa-money-bill-wave"></i>Économique</a>
@@ -46,16 +55,22 @@
                   <a class="rom" href="#"><i class="fas fa-heart"></i>Romantique</a>
                   <a class="ani" href="#"><i class="fas fa-dog"></i>Animaux autorisés</a>
                </div>
+               <!--Resultat de recherche-->
                <div id="info">
                   <p><i class="fas fa-info"></i>Plus de 500 hébergements disponibles dans cette ville</p>
                </div>
-            </header>   
-            <main> <!--Corps du site-->
+            </header>
+
+            <!--Corps du site avec 2 container-->
+            <main> 
+               <!--1er CONTAINER divisé en 2 BLOCK-->
                <div id="ville">
+                  <!--1er BLOCK-->
                   <article id="hebergement">
                      <h3 class="lieu">Hébergement à Marseille</h3>
+                     <!--Affichage de 6 photos cliquable-->
                      <div id="photo1">
-                        <div class="p1">
+                        <a href="#" class="p1">
                            <img class="cannebiere" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="marcus">
                            <div class="legende">
                               <h4>Aubèrge la Cannebière</h4>
@@ -66,8 +81,8 @@
                               <i class="fas fa-star" style="color: #0065FC;"></i>
                               <i class="fas fa-star" style="color: #F2F2F2;"></i>
                            </div>
-                        </div>
-                        <div class="p1">
+                        </a>
+                        <a href="#" class="p1">
                            <img class="portHotel" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="fred">
                            <div class="legende">
                               <h4>Hôtel du port</h4>
@@ -78,8 +93,8 @@
                               <i class="fas fa-star" style="color: #0065FC;"></i>
                               <i class="fas fa-star" style="color: #0065FC;"></i>
                            </div>
-                        </div>
-                        <div class="p1">
+                        </a>
+                        <a href="#" class="p1">
                            <img class="mouettes" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="reisetopia">
                            <div class="legende">
                               <h4>Hôtel Les mouettes</h4>
@@ -90,8 +105,8 @@
                               <i class="fas fa-star" style="color: #0065FC;"></i>
                               <i class="fas fa-star" style="color: #F2F2F2;"></i>
                            </div>
-                        </div>
-                        <div class="p1">
+                        </a>
+                        <a href="#" class="p1">
                            <img class="cannebiere" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie">
                            <div class="legende">
                               <h4>Hôtel de la mer</h4>
@@ -102,8 +117,8 @@
                               <i class="fas fa-star" style="color: #F2F2F2;"></i>
                               <i class="fas fa-star" style="color: #F2F2F2;"></i>
                            </div>
-                        </div>
-                        <div class="p1">
+                        </a>
+                        <a href="#" class="p1">
                            <img class="cannebiere" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="lee">
                            <div class="legende">
                               <h4>Aubèrge Le Pannier</h4>
@@ -114,8 +129,8 @@
                               <i class="fas fa-star" style="color: #0065FC;"></i>
                               <i class="fas fa-star" style="color: #F2F2F2;"></i>
                            </div>
-                        </div>
-                        <div class="p1">
+                        </a>
+                        <a href="#" class="p1">
                            <img class="cannebiere" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="zakaria">
                            <div class="legende">
                               <h4>Hôtel chez Amina</h4>
@@ -126,15 +141,21 @@
                               <i class="fas fa-star" style="color: #0065FC;"></i>
                               <i class="fas fa-star" style="color: #0065FC;"></i>
                            </div>
-                        </div>
-                        <a id="plus">Afficher plus</a>
+                        </a>
+                        
                      </div>
+                     <!--Afficher plus de resultats-->
+                     <a href="#" id="plus">Afficher plus</a>
                   </article>
+
+                  <!--2eme BLOCK-->
                   <aside id="populaire">
+                     <!--Titre du block et icon-->
                      <div id="titrePop">
                         <h3 class="pop">Les plus populaires</h3>
                         <i class="fas fa-chart-line"></i>
                      </div>
+                        <!--Affichages de 3 photos-->
                         <div id="photo2">
                            <div class="p2">
                               <img class="matin" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="emile">
@@ -181,6 +202,8 @@
                         </div>
                   </aside>
                </div>
+
+               <!--2eme CONTAINER divisé en 4 BLOCK-->
                <section id="activ">
                   <div id="blockPage">
                      <h3 id="activites">Activités à Marseille</h3>
@@ -218,6 +241,8 @@
                </section>
             </main> 
          </div> 
+
+         <!--Pied de page-->
          <footer id="foot"> 
             <div id="sizeFoot">
                <div id="propos">
