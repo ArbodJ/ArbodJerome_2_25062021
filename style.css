@@ -140,6 +140,7 @@ form
 }
 #filtre a
 {
+   color: black;
    font-weight: bold;
    text-decoration: none;
    border: #DEEBFF 1px solid;
@@ -698,12 +699,19 @@ footer
       margin-left: 0;
       margin-bottom: 2%;
    }
+   .side
+   {
+      background-color: azure;
+      width: 53%;
+      margin-top: 10px;
+   }
    .p2
    {
       background-color: white;
+      width: 350px;
       border-radius: 15px;
       box-shadow: 4px 4px 11px #e2e2e2;
-      margin: 16px 20px 20px 20px;
+      margin: 15px 10px 15px 10px;
       display: flex;
       flex-direction: row;
    }
@@ -711,7 +719,9 @@ footer
    {
       margin: 0 auto;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
    }
    #titrePop
    {
