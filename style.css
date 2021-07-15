@@ -1,10 +1,12 @@
 /*Generalités*/
 body
 {
+   border: red 1px solid;
    width: 100%;
 }
 #page
 {
+   border: red 1px solid;
    width: 95%;
    margin: 0 auto;
 }
@@ -14,14 +16,21 @@ body
 {
    width: 130px;
    height: 80px;
+   justify-content: flex-start;
    margin: auto 0;
+
 }
+#logo-ancre
+   {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+   }
 #navp /*Liens ancres*/
 {
    float: right;
-   width: 60%;
+   width: 100%;
    margin-top: 20px;
-   margin-right: 60px;
    display: flex;
    justify-content: flex-end;
    align-items: center;
@@ -37,9 +46,6 @@ body
 }
 p#fixe a
    {
-      position: absolute;
-      top: 13px;
-      right: 2%;
       color: #0065FC;
       text-decoration: none;
       font-size: 20px;
@@ -192,7 +198,6 @@ form
 /*--- CORPS DE PAGE --- divisé en 2 Block ---*/
 #ville /*1ere section preparation des 2 block (article et aside) cote a cote*/
 {
-   width: 100%;
    display: flex;
    justify-content: space-between;
    margin: 40px 0;
@@ -201,7 +206,7 @@ form
 /*Generalites*/
 #hebergement
 {
-   width: 72%;
+   width: 73%;
    background-color: #F2F2F2;
    border-radius: 15px;
 }
@@ -239,8 +244,8 @@ h3.lieu /*Titre*/
    border-radius: 15px;
    box-shadow: 4px 4px 11px #e2e2e2;
    flex: 0 30%;
-   margin-bottom: 20px;
    padding-bottom: 10px;
+   margin-top: 30px;
    text-decoration: none;
 }
 p.prix
@@ -310,9 +315,15 @@ img.amina
    object-fit: cover;
 }
 /*lien "Afficher plus"*/
-a#plus 
+#plus 
 {
-   margin: 0px 0px 0px 19px;
+   margin: 30px 0px 30px 33px;
+   font-weight: bold;
+   text-decoration: none;
+}
+#plus a 
+{
+   color: #0065FC;
    font-weight: bold;
    text-decoration: none;
 }
@@ -321,13 +332,21 @@ aside /*Generalites*/
 {
    background-color: #F2F2F2;
    border-radius: 15px;
-   margin-left: 3%;
-   width: 360px;
+   margin-left: 35px;
 }
-aside p.prix
+aside .prix1
 {
-   width: 88%;
-   font-size: 14px;
+   font-size: 15px;
+   margin: 10px 0 0 12px;
+}
+aside .note
+{
+   margin: 10px 0 0 12px;
+   padding: 32px 0 0 0;
+}
+aside h4
+{
+   margin: 10px 0 0 5px;
 }
 .side
 {
@@ -336,7 +355,7 @@ aside p.prix
 }
 #titrePop /*Titre*/
 {
-   margin: -12px 0px -18px 19px;;
+   margin: -12px 0px -18px 19px;
    display: flex;
    justify-content: space-between;
    align-items: baseline;
@@ -350,12 +369,19 @@ i.fas.fa-chart-line
    font-size: 20px;
    margin-right: 17px;
 }
+#photo2
+{
+   width: 96%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+}
 .p2 
 {
    background-color: white;
    border-radius: 15px;
    box-shadow: 4px 4px 11px #e2e2e2;
-   margin: 16px 20px 0px 20px;
+   margin: 33px 20px 0px 20px;
    display: flex;
    flex-direction: row;
 }
@@ -368,36 +394,16 @@ i.fas.fa-chart-line
    object-fit: cover;
 }
 
-/*1er BLOCK photo aside*/
-p.note
-{
-   margin: 12px auto;
-   padding: 32px 0 0 0;
-}
-
-/*2eme BLOCK photo aside*/
-p.note
-{
-   margin: 12px auto;
-   padding: 32px 0 0 0;
-}
-
-/*3eme BLOCK photo aside*/
-p.note
-{
-   margin: 12px auto;
-   padding: 32px 0 0 0;
-}
 /*PARTIE 2 du corps du site -- Activites -- */
 section#activ
 {
    width: 100%;
-   height: 540px;
 }
 #blockPage
 {
-   width: 100%;
+   width: 99%;
    height: 100%;
+   
 }
 h3#activites
 {
@@ -414,7 +420,7 @@ h3#activites
 /*BLOCK 1 photo et legende*/
 #block1 
 {
-   width: 23%;
+   width: 500px;
    height: 100%;
    border-radius: 10px;
    box-shadow: 4px 4px 11px #e2e2e2;
@@ -429,7 +435,6 @@ img.port
 }
 p.titrePort
 {
-   width: 91%;
    height: 9%;
    margin: -4px auto;
    padding-top: 23px;
@@ -442,7 +447,7 @@ p.titrePort
 /*GENERAL*/
 #block2 
 {
-   width: 23%;
+   width: 500px;
    height: 100%;
 }
 .Gphoto/*Grande photo*/
@@ -504,7 +509,7 @@ p.titreIles
 /*BLOCK 3 Photo et legende*/
 #block3
 {
-   width: 23%;
+   width: 500px;
    height: 100%;
    border-radius: 10px;
    box-shadow: 4px 4px 11px #e2e2e2;
@@ -519,7 +524,6 @@ img.calanque
 }
 p.titreCalanque
 {
-   width: 91%;
    height: 9%;
    margin: -4px auto;
    padding-top: 23px;
@@ -531,7 +535,7 @@ p.titreCalanque
 /*BLOCK 4 photo et legende*/
 #block4 
 {
-   width: 23%;
+   width: 500px;
    height: 100%;
 }
 /*Petite photo*/
@@ -598,18 +602,18 @@ footer
 {
    background-color: #F2F2F2;
    width: 100%;
-   position: absolute;
-   top: auto;
 }
 #sizeFoot li
 {
-   margin: 5px 0;
+   display: flex;
+   flex-direction: column;
+   margin-left: -19px;
    list-style: none;
 }
 #sizeFoot
 {
    width: 95%;
-   margin: 0;
+   margin: auto;
    display: flex;
    justify-content: flex-start;
 }
@@ -623,7 +627,6 @@ footer
 {
    display: flex;
    flex-direction: column;
-   margin-left: 40px;
    padding-right: 200px;
 }
 #propos ul
@@ -641,7 +644,6 @@ footer
 /*2eme list*/
 #loyer
 {
-   margin-left: 40px;
    padding-right: 200px;
    display: flex;
    flex-direction: column
@@ -661,7 +663,6 @@ footer
 /*3eme list*/
 #assista
 {
-   margin-left: 40px;
    display: flex;
    flex-direction: column
 }
@@ -680,70 +681,161 @@ footer
 
 /* -- RESPONSIVE -- */
 
-@media (max-width: 1033px)
+@media (max-width: 2160px)
 {
-   /*SECTION hebergement et populaire*/
-   #ville
+   #block1
    {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      margin: 40px 0;
-      flex-wrap: wrap-reverse;
+      width: 400px;
    }
-   aside /*Block populaire*/
+   #block2
    {
-      background-color: #F2F2F2;
-      border-radius: 15px;
+      width: 400px;
+   }
+   #block3
+   {
+      width: 400px;
+   }
+   #block4
+   {
+      width: 400px;
+   }
+}
+@media (max-width: 1730px)
+{
+   #block1
+   {
+      width: 300px;
+   }
+   #block2
+   {
+      width: 300px;
+   }
+   #block3
+   {
+      width: 300px;
+   }
+   #block4
+   {
+      width: 300px;
+   }
+}
+@media (max-width: 1320px)
+{
+   /*POPULAIRE*/
+   aside
+   {
       width: 100%;
-      margin-left: 0;
+      padding-bottom: 25px;
       margin-bottom: 2%;
    }
-   .side
+   /*HEBERGEMENT*/
+   #ville 
    {
-      background-color: azure;
-      width: 53%;
-      margin-top: 10px;
-   }
-   .p2
-   {
-      background-color: white;
-      width: 350px;
-      border-radius: 15px;
-      box-shadow: 4px 4px 11px #e2e2e2;
-      margin: 15px 10px 15px 10px;
       display: flex;
-      flex-direction: row;
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+      margin: 40px 0;
+   }
+   #hebergement
+   {
+      width: 100%;
    }
    #photo2
    {
-      margin: 0 auto;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
+      width: 75%;
    }
-   #titrePop
+   .p1
    {
-      margin: -12px 0px -18px 19px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
+      flex: 0 45%;
+      margin-top: 28px;
+   }
+   img.cannebiere
+   {
+      width: 98%;
+      
    }
    
-   #hebergement /*Block hebergement*/
+   /*ACTIVITES*/
+   #blockPage
    {
       width: 100%;
-      background-color: #F2F2F2;
-      border-radius: 15px;
+      margin: 10px 0;
    }
-   /*Pied de page*/
-   #sizeFoot ul
+   #blockPicture 
    {
-      margin: 10px -74px 0 -20px;
+      width: 100%;
+      height: 86%;
       display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-around;
+   }
+   #block1
+   {
+      width: 500px;
+      height: 465px;
+      margin: 15px 0;
+      order: 1;
+   }
+   #block2
+   {
+      width: 500px;
+      height: 465px;
+      margin: 15px 0;
+      order: 2;
+
+   }
+   #block3
+   {
+      width: 500px;
+      height: 465px;
+      margin: 15px 0;
+      order: 4;
+   }
+   #block4
+   {
+      width: 500px;
+      height: 465px;
+      margin: 15px 0;
+      order: 3;
+   }
+   .dame
+   {
+      object-position: 0px 0px;
+   }
+
+}
+@media (max-width: 1050px)
+{
+   #page
+   {
+      width: 100%;
+   }
+   aside
+   {
+      margin: 0 0 25px 0;
+   }
+   #sizeFoot
+   {
+      display: flex;
+      flex-wrap: wrap;
       flex-direction: column;
       align-content: flex-start;
+   }
+}
+
+@media (max-width: 810px)
+{
+   /*Filtre de recherche*/
+   #filtre
+   {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+   }
+   .ani
+   {
+      margin: 15px;
    }
 }
 @media (max-width: 600px)
@@ -752,22 +844,25 @@ footer
    {
       width: 100%;
    }
+
+   /*LIEN ANCRE*/
+   #logo-ancre
+   {
+      display: flex;
+   }
    p#fixe a
    {
-      position: absolute;
+      /*position: absolute;
       top: 13px;
-      right: 0;
+      right: 0;*/
       color: #0065FC;
       text-decoration: none;
       font-size: 20px;
       font-weight: bold;
+      margin-top: 25px;
       padding-top: 23px;
       border-top: 3px #fff solid;
    }
-   /*a#fixe
-   {
-      
-   }*/
    #navp
    {
       width: 100%;
@@ -814,8 +909,116 @@ footer
       display: flex;
       justify-content: space-around;
    }
+
+   /*FILTRE*/
+   #filtre .rom
+   {
+      width: 100%;
+      margin: 10px 430px 0 0;
+   }
+   .rom
+   {
+      width: 300px;
+      margin: 10px 430px 0 0px;
+      padding-right: 20px;
+   }
+   .ani
+   {
+      margin: 10px 0 0 0;
+   }
+   
+
+   /*1er container*/
    #ville a
    {
       width: 50%;
+   }
+
+   /*POPULAIRE*/
+   h3.lieu
+   {
+      margin: 30px 0 -10px 29px;
+   }
+   #photo2
+   {
+      width: 95%;
+   }
+
+   /*HEBERGEMENT*/
+   .p1
+   {
+      flex: 0 95%;
+   }
+   
+   /*ACTIVITES*/
+   #blockPage
+   {
+      margin-bottom: -78px;
+   }
+   #block1
+   {
+      width: 95%;
+      height: 260px;
+      margin: 15px 0;
+      order: 1;
+   }
+   img.port
+   {
+      height: 200px;
+   }
+   #block2
+   {
+      width: 95%;
+      height: 635px;
+      margin: 15px 0;
+      order: 2;
+   }
+   .Gphoto
+   {
+      height: 40%;
+   }
+   img.fort
+   {
+      height: 200px;
+   }
+   img.iles
+   {
+      height: 200px;
+   }
+   #block3
+   {
+      width: 95%;
+      height: 260px;
+      margin-top: -95px;
+      order: 3;
+   }
+   img.calanque
+   {
+      height: 200px;
+   }
+   #block4
+   {
+      width: 95%;
+      height: 635px;
+      margin: 15px 0;
+      order: 4;
+   }
+   .Gphoto1
+   {
+      height: 40%;
+   }
+   img.dame
+   {
+      height: 200px;
+   }
+   img.parc
+   {
+      height: 200px;
+   }
+
+   /*FOOTER*/
+   #assista
+   {
+      margin-bottom: 15px;
    }
 }
