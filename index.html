@@ -15,25 +15,20 @@
          <div id="page">
             <!--Entete de page-->
             <header>
-               <!-- Block logo et liens ancres--> 
-               <div id="logo-ancre">
-                  <!--Titre-->
-                  <img id="logo" src="images/logo/Reservia.svg" alt="logo" />
-                  <div id="navp">
-                     <!--Liens ancres-->
+               <!-- Block logo et liens ancres-->
+               <div id="headSite">
+                  <div id="title"> <!-- Logo du site-->
+                     <img id="logo" src="images/logo/Reservia.svg" alt="logo" />
+                  </div>  
+                  <div id="menu"> <!--Navigation du site-->
                      <nav id="lienAncre">
-                        <div id="ancre">
-                           <ul>
-                              <li><a href="#ville">Hébergements</a></li>
-                              <li><a href="#activ">Activités</a></li>  
-                           </ul>
-                           <p id="fixe"><a href="#foot">S'inscrire</a></p>
-                        </div>       
+                           <a class="lien" href="#ville">Hébergements</a>
+                           <a class="lien" href="#activ">Activités</a>  
                      </nav>
-                     
+                     <div id="sign">
+                        <a id="sign_up" href="#foot">S'inscrire</a>
+                     </div>
                   </div>
-                  
-                  
                </div>
                <!--Slogan du site-->
                <div id="slogan">
@@ -51,11 +46,27 @@
                </div>
                <!--Filtres de recherche-->
                <div id="filtre">
-                  <p class="fil">Filtres</p>
-                  <a class="eco" href="#"><i class="fas fa-money-bill-wave"></i>Économique</a>
-                  <a class="fam" href="#"><i class="fas fa-child"></i>Familial</a>
-                  <a class="rom" href="#"><i class="fas fa-heart"></i>Romantique</a>
-                  <a class="ani" href="#"><i class="fas fa-dog"></i>Animaux autorisés</a>
+                  <div id="filtreTitre">
+                     <p>Filtres</p>
+                  </div>
+                  <div id="blockFiltre">
+                     <div id="filtre1">
+                           <i class="fas fa-money-bill-wave"></i>
+                           <a href="#">Économique</a>
+                     </div>
+                     <div id="filtre2">
+                           <i class="fas fa-child"></i>
+                           <a href="">Familial</a>   
+                     </div>
+                     <div id="filtre3">
+                        <i class="fas fa-heart"></i>
+                        <a href="">Romantique</a>  
+                     </div>
+                     <div id="filtre4">
+                        <i class="fas fa-dog"></i>
+                        <a href="">Animaux autorisés</a>  
+                     </div>
+                  </div>  
                </div>
                <!--Resultat de recherche-->
                <div id="info">

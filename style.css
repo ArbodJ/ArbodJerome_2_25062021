@@ -1,7 +1,7 @@
 /*Generalités*/
 body
 {
-   width: 100%;
+   font-family: "Raleway", sans-serif;
    max-width: 2600px;
    margin: 0 auto;
 }
@@ -12,30 +12,48 @@ body
 }
 
 /*--- ENTETE DE PAGE ---*/
-#logo /*Titre du site reservia*/
+/*Titre du site (img reservia)*/
+header
+{
+   width: 95%;
+   margin: auto;
+}
+
+/*--- ENTETE DE PAGE ---*/
+#headSite
+{
+   display: flex;
+   justify-content: space-between;
+}
+/*Titre du site (img reservia)*/
+#logo
 {
    width: 130px;
    height: 80px;
-   justify-content: flex-start;
-   margin: auto 0;
-
 }
-#logo-ancre
-   {
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-end;
-   }
-#navp /*Liens ancres*/
+/*Navigation du site*/
+#menu 
 {
-   float: right;
+   display: flex;
+   align-items: flex-start;
    width: 100%;
-   margin-top: 20px;
+}
+
+#lienAncre /*nav 2 liens mobile*/
+{
+   width: 100%;
    display: flex;
    justify-content: flex-end;
-   align-items: center;
 }
-#navp a
+.lien
+{
+   margin-right: 80px;
+}
+#sign /*lien Fixe*/
+{
+   display: flex;
+}
+.lien, #sign_up /*config des liens*/
 {
    color: #0065FC;
    text-decoration: none;
@@ -44,48 +62,9 @@ body
    padding-top: 33px;
    border-top: 3px #fff solid;
 }
-p#fixe a
-   {
-      color: #0065FC;
-      text-decoration: none;
-      font-size: 20px;
-      font-weight: bold;
-      padding-top: 28px;
-      border-top: 3px #fff solid;
-   }
-#navp a:hover
+.lien:hover, #sign_up:hover
 {
    border-top: 3px #0065FC solid;
-}
-p#fixe a:hover
-{
-   border-top: 3px #0065FC solid;
-}
-#ancre
-{
-   width: 380px;
-   
-}
-#ancre ul
-{
-   display: flex;
-   justify-content: space-evenly;
-}
-#ancre li
-{
-   list-style: none;
-}
-
-/*Slogan du site*/
-#slogan h3
-{
-   font-size: 25px;
-   font-weight: bold;
-}
-#slogan p
-{
-   font-size: 20px;
-   margin-top: -26px;
 }
 
 /*Barre de recherche*/
@@ -131,54 +110,71 @@ form
 }
 
 /*Filtres de recherche*/
-#filtre
+/* -- MENU FILTRE -- */
+#filtre /*Generalites*/
 {
    margin-top: 15px;
    display: flex;
    align-items: center;
-   justify-content: flex-start;
 }
-.fil
+#filtreTitre
 {
-   margin: 0 12px 0 0;
-   font-size: 20px;
    font-weight: bold;
 }
-#filtre a
+#blockFiltre
 {
-   color: black;
-   font-weight: bold;
-   text-decoration: none;
-   border: #DEEBFF 1px solid;
-   border-radius: 32px;
-   margin-right: 25px;
+   display: flex;
+}
+#filtre1, #filtre2, #filtre3, #filtre4
+{
+   display: flex;
+   margin: 5px 15px;
+   padding: 4px 4px;
+   border: #DEEBFF 2px solid;
+   border-radius: 24px;
+   
+}
+#blockFiltre i /*Icon*/
+{
    display: flex;
    align-items: center;
-}
-#filtre .fas
-{
-   width: 32px;
-   height: 32px;
    color: #0065FC;
    background-color: #DEEBFF;
-   border: #DEEBFF 1px solid;
-   border-radius: 32px;
-   margin: 0 12px 0 -2px;
+   border-radius: 25px;
+   margin: -5px -5px;
+}
+#filtre1 i
+{
+   padding: 10px 10px;
+}
+#filtre2 i
+{
+    padding: 10px 14px;
+}
+#filtre3 i
+{
+   padding: 10px 12px;
+   
+}
+#filtre4 i
+{
+   padding: 10px 11px;
+}
+#blockFiltre a /*Lien*/
+{
    display: flex;
-   justify-content: center;
-   align-items: center;
+   text-decoration: none;
+   color: #000;
+   font-weight: bold;
+   margin: 5px 15px;
 }
-.eco, .rom
+#blockFiltre a:hover
 {
-   width: 150px;
-}
-.fam
-{
-   width: 125px;
-}
-.ani
-{
-   width: 195px;
+   text-decoration: #0065FC underline;
+   color: #0065FC;
+   background-color: #DEEBFF;
+   border-radius: 5px;
+   margin: 5px 15px;
 }
 
 /*Resultat de recherche*/
@@ -828,18 +824,57 @@ footer
    }
 }
 
-@media (max-width: 810px)
+@media (max-width: 887px)
 {
-   /*Filtre de recherche*/
-   #filtre
+   #filtreTitre
+   {
+      margin-bottom: auto;
+   }
+   #blockFiltre
    {
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-start;
    }
-   .ani
+}
+@media (max-width:768px)
+{
+   #headSite
    {
-      margin: 15px;
+      display: flex;
+      flex-direction: column;
+   }
+   #menu
+   {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+   nav
+   {
+      width: 100%;
+   }
+   .lien
+   {
+      border-top: none;
+      border-bottom: #fff 3px solid;
+      margin-bottom: 5px;
+      margin: auto;
+      padding-bottom: 10px;
+      display: flex;
+      flex: 0 50%;
+      justify-content: space-around;
+   }
+   .lien:hover
+   {
+      border-top: none;
+      border-bottom: #0065FC 3px solid;
+   }
+   #sign
+   {
+      width: 100%;
+      margin-top: -84px;
+      display: flex;
+      justify-content: flex-end;
+      
    }
 }
 @media (max-width: 600px)
