@@ -15,7 +15,7 @@ body
 /*Titre du site (img reservia)*/
 header
 {
-   width: 95%;
+   /*width: 95%;*/
    margin: auto;
 }
 
@@ -64,12 +64,14 @@ header
 }
 .lien:hover, #sign_up:hover
 {
+   color: #DEEBFF;
    border-top: 3px #0065FC solid;
 }
 
 /*Barre de recherche*/
 #search
 {
+   font-family: "Raleway", sans-serif;
    height: 60px;
    margin-top: -15px;
 }
@@ -91,6 +93,7 @@ form
 }
 #map
 {
+   font-family: "Raleway", sans-serif;
    height: 45px;
    width: 245px;
    border: #DEEBFF 1px solid;
@@ -100,6 +103,7 @@ form
 }
 .button
 {
+   font-family: "Raleway", sans-serif;
    color: white;
    height: 45px;
    font-weight: bold;
@@ -170,11 +174,13 @@ form
 }
 #blockFiltre a:hover
 {
-   text-decoration: #0065FC underline;
    color: #0065FC;
-   background-color: #DEEBFF;
-   border-radius: 5px;
+   text-decoration: #0065FC underline;
    margin: 5px 15px;
+}
+#filtre1:hover, #filtre2:hover, #filtre3:hover, #filtre4:hover
+{
+   background-color: #DEEBFF;
 }
 
 /*Resultat de recherche*/
@@ -192,7 +198,7 @@ form
 }
 
 /*--- CORPS DE PAGE --- divisé en 2 Block ---*/
-#ville /*1ere section preparation des 2 block (article et aside) cote a cote*/
+#ville /*1ere section mise en place des 2 block (article et aside) cote a cote*/
 {
    display: flex;
    justify-content: space-between;
@@ -202,7 +208,7 @@ form
 /*Generalites*/
 #hebergement
 {
-   width: 73%;
+   flex: 1 70%;
    background-color: #F2F2F2;
    border-radius: 15px;
 }
@@ -213,7 +219,7 @@ article p
 h3.lieu /*Titre*/
 {
    width: 234px;
-   margin: 35px 0 21px 29px;
+   margin: 39px 0 0px 20px;
 }
 #photo1 
 {
@@ -326,6 +332,7 @@ img.amina
 /*2eme partie -- Populaire -- */
 aside /*Generalites*/
 {
+   flex: 1 30%;
    background-color: #F2F2F2;
    border-radius: 15px;
    margin-left: 35px;
@@ -367,7 +374,6 @@ i.fas.fa-chart-line
 }
 #photo2
 {
-   width: 96%;
    margin: 0 auto;
    display: flex;
    flex-direction: column;
@@ -695,9 +701,10 @@ footer
    /*POPULAIRE*/
    aside
    {
-      width: 100%;
+      flex: 1 100%;
       padding-bottom: 25px;
       margin-bottom: 2%;
+      margin-left: 0;
    }
    /*HEBERGEMENT*/
    #ville 
@@ -709,7 +716,7 @@ footer
    }
    #hebergement
    {
-      width: 100%;
+      flex: 1 100%;
    }
    #photo2
    {
@@ -780,11 +787,7 @@ footer
 {
    #page
    {
-      width: 100%;
-   }
-   aside
-   {
-      margin: 0 0 25px 0;
+      width: 95%;
    }
    #sizeFoot
    {
@@ -824,21 +827,52 @@ footer
    }
 }
 
-@media (max-width: 887px)
+@media (max-width: 893px)
 {
+   #page
+   {
+      width: 100%;
+   }
+   #title
+   {
+      margin-left: 5%;
+   }
+   #slogan
+   {
+      margin-left: 5%;
+   }
+   #search
+   {
+      margin-left: 5%;
+   }
+   #filtre
+   {
+      margin-left: 5%;
+   }
+   #info
+   {
+      margin-left: 5%;
+   }
    #filtreTitre
    {
-      margin-bottom: auto;
+      margin-right: auto;
    }
    #blockFiltre
    {
       display: flex;
       flex-wrap: wrap;
    }
-}
-@media (max-width:768px)
-{
+   #filtre1, #filtre2, #filtre3, #filtre4
+   {
+      margin-left: 0;
+      margin-right: 45px;
+   }
    #headSite
+   {
+      display: flex;
+      flex-direction: column;
+   }
+   #filtre
    {
       display: flex;
       flex-direction: column;
@@ -855,7 +889,7 @@ footer
    .lien
    {
       border-top: none;
-      border-bottom: #fff 3px solid;
+      border-bottom: #DEEBFF 3px solid;
       margin-bottom: 5px;
       margin: auto;
       padding-bottom: 10px;
@@ -879,9 +913,27 @@ footer
 }
 @media (max-width: 600px)
 {
+   header
+   {
+      margin: auto;
+   }
    #page
    {
       width: 100%;
+   }
+   .button
+   {
+      margin-left: -10px;
+      font-size: 0;
+      width: 50px;
+      border-radius: 10px;
+      background-image: url(images/logo/search-solid.png);
+
+      color:#fff;
+      background-color: #0065FC;
+      background-position: 11px 11px;
+      background-repeat: no-repeat;
+      background-size: 25px 20px;
    }
 
    /*LIEN ANCRE*/
@@ -891,9 +943,6 @@ footer
    }
    p#fixe a
    {
-      /*position: absolute;
-      top: 13px;
-      right: 0;*/
       color: #0065FC;
       text-decoration: none;
       font-size: 20px;
@@ -924,10 +973,10 @@ footer
       justify-content: space-around;
    }
    #navp a:hover
-{
-   border-top: none;
-   border-bottom: 3px #0065FC solid;
-}
+   {
+      border-top: none;
+      border-bottom: 3px #0065FC solid;
+   }
    #ancre
    {
       width: 100%;
@@ -948,25 +997,6 @@ footer
       display: flex;
       justify-content: space-around;
    }
-
-   /*FILTRE*/
-   #filtre .rom
-   {
-      width: 100%;
-      margin: 10px 430px 0 0;
-   }
-   .rom
-   {
-      width: 300px;
-      margin: 10px 430px 0 0px;
-      padding-right: 20px;
-   }
-   .ani
-   {
-      margin: 10px 0 0 0;
-   }
-   
-
    /*1er container*/
    #ville a
    {
@@ -976,7 +1006,7 @@ footer
    /*POPULAIRE*/
    h3.lieu
    {
-      margin: 30px 0 -10px 29px;
+      margin: 30px 0 -10px 17px;
    }
    #photo2
    {
@@ -984,12 +1014,21 @@ footer
    }
 
    /*HEBERGEMENT*/
+   #hebergement
+   {
+      background-color: #fff;
+   }
    .p1
    {
       flex: 0 95%;
    }
    
    /*ACTIVITES*/
+   #activites
+   {
+      margin-left: 17px;
+      margin-bottom: 13px;
+   }
    #blockPage
    {
       margin-bottom: 71px;
