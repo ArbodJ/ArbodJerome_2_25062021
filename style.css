@@ -15,7 +15,6 @@ body
 /*Titre du site (img reservia)*/
 header
 {
-   /*width: 95%;*/
    margin: auto;
 }
 
@@ -38,7 +37,6 @@ header
    align-items: flex-start;
    width: 100%;
 }
-
 #lienAncre /*nav 2 liens mobile*/
 {
    width: 100%;
@@ -64,7 +62,6 @@ header
 }
 .lien:hover, #sign_up:hover
 {
-   color: #DEEBFF;
    border-top: 3px #0065FC solid;
 }
 
@@ -184,6 +181,10 @@ form
 }
 
 /*Resultat de recherche*/
+#info
+{
+   display: flex;
+}
 #info p
 {
    margin: 35px 0px 13px 0px;
@@ -212,7 +213,7 @@ form
    background-color: #F2F2F2;
    border-radius: 15px;
 }
-article p
+#hebergement p
 {
    font-size: 14px;
 }
@@ -322,59 +323,44 @@ img.amina
    margin: 30px 0px 30px 33px;
    font-weight: bold;
    text-decoration: none;
+   font-size: 15px;
 }
 #plus a 
 {
-   color: #0065FC;
+   color: #000;
    font-weight: bold;
    text-decoration: none;
 }
 /*2eme partie -- Populaire -- */
-aside /*Generalites*/
+#populaire /*Generalites*/
 {
    flex: 1 30%;
    background-color: #F2F2F2;
    border-radius: 15px;
    margin-left: 35px;
 }
-aside .prix1
+.prix1
 {
    font-size: 15px;
-   margin: 10px 0 0 12px;
 }
-aside .note
+.note
 {
-   margin: 10px 0 0 12px;
-   padding: 32px 0 0 0;
-}
-aside h4
-{
-   margin: 10px 0 0 5px;
-}
-.side
-{
-   width: 55%;
-   margin-top: 10px;
+   margin-top: 55px;
 }
 #titrePop /*Titre*/
 {
-   margin: -12px 0px -18px 19px;
-   display: flex;
-   justify-content: space-between;
-   align-items: baseline;
-}
-h3.pop, i.fas.fa-chart-line
-{
-   padding-top: 30px;
+   width: 90%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 i.fas.fa-chart-line
 {
    font-size: 20px;
-   margin-right: 17px;
 }
-#photo2
+#photo2 /*block image et texte*/
 {
-   margin: 0 auto;
    display: flex;
    flex-direction: column;
 }
@@ -383,17 +369,23 @@ i.fas.fa-chart-line
    background-color: white;
    border-radius: 15px;
    box-shadow: 4px 4px 11px #e2e2e2;
-   margin: 33px 20px 0px 20px;
+   margin: 0 20px 25px 20px;
    display: flex;
    flex-direction: row;
 }
 .matin
 {
-   width: 40%;
+   width: 45%;
    height: 187px;
    border-radius: 15px 0 0 15px;
    margin: 5px 5px;
    object-fit: cover;
+}
+.linkp2
+{
+   text-decoration: none;
+   color: #000;
+   display: flex;
 }
 
 /*PARTIE 2 du corps du site -- Activites -- */
@@ -409,6 +401,11 @@ h3#activites
 {
    width: 80%;
    height: 2%;
+}
+.lienPicture
+{
+   text-decoration: none;
+   color: #000;
 }
 #blockPicture
 {
@@ -426,7 +423,7 @@ img.port
 {
    border-radius: 10px 10px 0 0;
    width: 100%;
-   height: 400px;
+   height: 450px;
    margin: 0 auto;
    object-fit: cover;  
 }
@@ -457,13 +454,12 @@ img.fort
 {
    border-radius: 10px 10px 0 0;
    width: 100%;
-   height: 195px;
+   height: 220px;
    margin: 0 auto;
    object-fit: cover;  
 }
 .titreFort
 {
-   width: 91%;
    margin: 0 auto;
    padding: 9px 0px 9px 15px;
    background-color: white;
@@ -477,24 +473,19 @@ img.fort
    border-radius: 10px;
    box-shadow: 4px 4px 11px #e2e2e2;
    width: 100%;
-   height: 41%;
-   margin-top: 20px;
 }
 img.iles
 {
    border-radius: 10px 10px 0 0;
    width: 100%;
-   height: 125px;
-   margin: 0px auto;
+   height: 170px;
+   margin: 0 auto;
    object-fit: cover;  
 }
 p.titreIles
 {
-   width: 91%;
-   height: 12%;
    margin: 0 auto;
-   padding-top: 23px;
-   padding-left: 12px;
+   padding: 9px 0px 9px 15px;
    background-color: white;
    border-radius: 0 0 10px 10px;
    font-weight: bold;
@@ -503,7 +494,6 @@ p.titreIles
 #block3
 {
    width: 24%;
-   height: 100%;
    border-radius: 10px;
    box-shadow: 4px 4px 11px #e2e2e2;
 }
@@ -511,13 +501,11 @@ img.calanque
 {
    border-radius: 10px 10px 0 0;
    width: 100%;
-   height: 400px;
-   margin: 0 auto;
+   height: 450px;
    object-fit: cover;
 }
 p.titreCalanque
 {
-   height: 9%;
    margin: 0 auto;
    padding: 9px 0px 9px 15px;
    background-color: white;
@@ -539,14 +527,12 @@ p.titreCalanque
    border-radius: 10px;
    box-shadow: 4px 4px 11px #e2e2e2;
    width: 100%;
-   height: 41%;
-   margin-top: 0;
 }
 img.dame
 {
    border-radius: 10px 10px 0 0;
    width: 100%;
-   height: 125px;
+   height: 170px;
    margin: 0px auto;
    object-fit: cover;
    object-position: 0px -21px;  
@@ -573,8 +559,7 @@ img.parc
 {
    border-radius: 10px 10px 0 0;
    width: 100%;
-   height: 195px;
-   margin: 20 auto;  
+   height: 220px;  
    object-fit: cover;
 }
 .titreParc
@@ -699,12 +684,17 @@ footer
 @media (max-width: 1320px)
 {
    /*POPULAIRE*/
-   aside
+   #populaire
    {
       flex: 1 100%;
       padding-bottom: 25px;
       margin-bottom: 2%;
       margin-left: 0;
+   }
+   .p2
+   {
+      margin: 0 20px 25px 20px;
+      flex: 0 96%;
    }
    /*HEBERGEMENT*/
    #ville 
@@ -720,7 +710,8 @@ footer
    }
    #photo2
    {
-      width: 75%;
+      width: 94%;
+      margin: 0 auto;
    }
    .p1
    {
@@ -736,8 +727,8 @@ footer
    /*ACTIVITES*/
    #blockPage
    {
-      width: 100%;
-      margin: 10px 0;
+      width: 90%;
+      margin: 10px auto;
    }
    #blockPicture 
    {
@@ -785,18 +776,18 @@ footer
 }
 @media (max-width: 1100px)
 {
-   #page
+   #page /*generalites*/
    {
       width: 95%;
    }
-   #sizeFoot
+   #sizeFoot /*footer*/
    {
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
       align-content: flex-start;
    }
-   #block1
+   #block1 /*Activites*/
    {
       width: 46%;
       height: 465px;
@@ -829,7 +820,7 @@ footer
 
 @media (max-width: 893px)
 {
-   #page
+   #page /*generalites*/
    {
       width: 100%;
    }
@@ -853,7 +844,18 @@ footer
    {
       margin-left: 5%;
    }
-   #filtreTitre
+   .lien, #sign_up
+   {
+      margin-right: 30px;
+   }
+   #plus 
+   {
+   margin: 50px 0px 30px 33px;
+   font-weight: bold;
+   text-decoration: none;
+   font-size: 17px;
+   }
+   #filtreTitre /*Filtre*/
    {
       margin-right: auto;
    }
@@ -1000,27 +1002,34 @@ footer
    /*1er container*/
    #ville a
    {
-      width: 50%;
+      width: 90%;
+      margin: 15px auto;
    }
 
    /*POPULAIRE*/
    h3.lieu
    {
-      margin: 30px 0 -10px 17px;
+      margin: 30px 0 11px 17px;
    }
    #photo2
    {
       width: 95%;
    }
-
+  
    /*HEBERGEMENT*/
    #hebergement
    {
       background-color: #fff;
    }
+   #photo1
+   {
+      width: 90%;
+      margin: auto;
+   }
    .p1
    {
       flex: 0 95%;
+      margin: 15px auto;
    }
    
    /*ACTIVITES*/
@@ -1037,7 +1046,6 @@ footer
    {
       width: 95%;
       height: 260px;
-      margin: 15px 0;
       order: 1;
    }
    img.port
@@ -1053,11 +1061,15 @@ footer
    }
    .Gphoto
    {
-      height: 40%;
+      margin-bottom: 15px;
    }
    img.fort
    {
       height: 200px;
+   }
+   .Pphoto
+   {
+      margin-top: 15px;
    }
    img.iles
    {
@@ -1071,7 +1083,7 @@ footer
    {
       width: 95%;
       height: 260px;
-      margin-top: 5px;
+      margin-top: 15px;
       order: 3;
    }
    img.calanque
@@ -1081,7 +1093,6 @@ footer
    #block4
    {
       width: 95%;
-      height: 41%;
       margin: 15px 0;
       order: 4;
    }
@@ -1099,8 +1110,21 @@ footer
    }
 
    /*FOOTER*/
+   #propos
+   {
+      width: 95%;
+   }
+   #propos ul 
+   {
+      display: flex;
+   }
+   #sizeFoot li
+   {
+      display: flex;
+      margin-top: 30px;
+   }
    #assista
    {
-      margin-bottom: 15px;
+      margin-bottom: 40px;
    }
 }
