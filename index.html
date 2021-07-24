@@ -32,7 +32,7 @@
                </div>
                <!--Slogan du site-->
                <div id="slogan">
-                  <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+                  <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                   <p>En plein centre ville ou en pleine nature</p>
                </div>
                <!--Barre de recherche-->
@@ -40,7 +40,7 @@
                   <form action="#" method="post">
                      <label for="map"></label>
                      <img class="map" src="images/logo/map-marker-alt-solid.svg" alt="gps">
-                     <input type="search" id="map" name="gps" placeholder="Marseille, France" required/>
+                     <input type="search" id="map" name="gps" placeholder="Marseille, France" value="" required/>
                      <button class="button" type="submit">Rechercher</button>
                   </form>
                </div>
@@ -81,80 +81,92 @@
                <div id="ville">
                   <!--1er BLOCK-->
                   <section id="hebergement">
-                     <h3 class="lieu">Hébergement à Marseille</h3>
+                     <h2 class="lieu">Hébergements à Marseille</h2>
                      <!--Affichage de 6 photos cliquable-->
                      <div id="photo1">
                         <a href="#" class="p1">
-                           <img class="cannebiere" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="marcus">
-                           <div class="legende">
-                              <h4>Aubèrge la Cannebière</h4>
-                              <p class="prix">Nuit a partir de <strong>25€</strong></p>
-                              <i class="fas fa-star" style="color: #0065FC;" ></i>
-                              <i class="fas fa-star" style="color: #0065FC;"></i>
-                              <i class="fas fa-star" style="color: #0065FC;"></i>
-                              <i class="fas fa-star" style="color: #0065FC;"></i>
-                              <i class="fas fa-star" style="color: #F2F2F2;"></i>
-                           </div>
+                           <figure class="blockp1">
+                              <img class="cannebiere" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="marcus"/>
+                              <figcaption class="legende">
+                                 <h4>Aubèrge la Cannebière</h4>
+                                 <p class="prix">Nuit a partir de <strong>25€</strong></p>
+                                 <i class="fas fa-star" style="color: #0065FC;" ></i>
+                                 <i class="fas fa-star" style="color: #0065FC;"></i>
+                                 <i class="fas fa-star" style="color: #0065FC;"></i>
+                                 <i class="fas fa-star" style="color: #0065FC;"></i>
+                                 <i class="fas fa-star" style="color: #F2F2F2;"></i>
+                              </figcaption>
+                           </figure>
                         </a>
                         <a href="#" class="p1">
-                           <img class="cannebiere" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="fred">
-                           <div class="legende">
-                              <h4>Hôtel du port</h4>
-                              <p class="prix">Nuit a partir de 52<strong>€</strong></p>
-                              <i class="fas fa-star" style="color: #0065FC;" ></i>
-                              <i class="fas fa-star" style="color: #0065FC;"></i>
-                              <i class="fas fa-star" style="color: #0065FC;"></i>
-                              <i class="fas fa-star" style="color: #0065FC;"></i>
-                              <i class="fas fa-star" style="color: #0065FC;"></i>
-                           </div>
+                           <figure class="blockp1">
+                              <img class="cannebiere" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="fred">
+                              <figcaption class="legende">
+                                 <h4>Hôtel du port</h4>
+                                 <p class="prix">Nuit a partir de 52<strong>€</strong></p>
+                                 <i class="fas fa-star" style="color: #0065FC;" ></i>
+                                 <i class="fas fa-star" style="color: #0065FC;"></i>
+                                 <i class="fas fa-star" style="color: #0065FC;"></i>
+                                 <i class="fas fa-star" style="color: #0065FC;"></i>
+                                 <i class="fas fa-star" style="color: #0065FC;"></i>
+                              </figcaption>
+                           </figure>
                         </a>
                         <a href="#" class="p1">
-                           <img class="cannebiere" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="reisetopia">
-                           <div class="legende">
-                              <h4>Hôtel Les mouettes</h4>
-                              <p class="prix">Nuit a partir de 76<strong>€</strong></p>
-                              <i class="fas fa-star" style="color: #0065FC;" ></i>
-                              <i class="fas fa-star" style="color: #0065FC;"></i>
-                              <i class="fas fa-star" style="color: #0065FC;"></i>
-                              <i class="fas fa-star" style="color: #0065FC;"></i>
-                              <i class="fas fa-star" style="color: #F2F2F2;"></i>
-                           </div>
+                           <figure class="blockp1">
+                              <img class="cannebiere" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="reisetopia">
+                              <figcaption class="legende">
+                                 <h4>Hôtel Les mouettes</h4>
+                                 <p class="prix">Nuit a partir de 76<strong>€</strong></p>
+                                 <i class="fas fa-star" style="color: #0065FC;" ></i>
+                                 <i class="fas fa-star" style="color: #0065FC;"></i>
+                                 <i class="fas fa-star" style="color: #0065FC;"></i>
+                                 <i class="fas fa-star" style="color: #0065FC;"></i>
+                                 <i class="fas fa-star" style="color: #F2F2F2;"></i>
+                              </figcaption>
+                           </figure>
                         </a>
                         <a href="#" class="p1">
-                           <img class="cannebiere" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie">
-                           <div class="legende">
-                              <h4>Hôtel de la mer</h4>
-                              <p class="prix">Nuit a partir de 46<strong>€</strong></p>
-                              <i class="fas fa-star" style="color: #0065FC;" ></i>
-                              <i class="fas fa-star" style="color: #0065FC;"></i>
-                              <i class="fas fa-star" style="color: #0065FC;"></i>
-                              <i class="fas fa-star" style="color: #F2F2F2;"></i>
-                              <i class="fas fa-star" style="color: #F2F2F2;"></i>
-                           </div>
+                           <figure class="blockp1">
+                              <img class="cannebiere" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie">
+                              <figcaption class="legende">
+                                 <h4>Hôtel de la mer</h4>
+                                 <p class="prix">Nuit a partir de 46<strong>€</strong></p>
+                                 <i class="fas fa-star" style="color: #0065FC;" ></i>
+                                 <i class="fas fa-star" style="color: #0065FC;"></i>
+                                 <i class="fas fa-star" style="color: #0065FC;"></i>
+                                 <i class="fas fa-star" style="color: #F2F2F2;"></i>
+                                 <i class="fas fa-star" style="color: #F2F2F2;"></i>
+                              </figcaption>
+                           </figure>
                         </a>
                         <a href="#" class="p1">
-                           <img class="cannebiere" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="lee">
-                           <div class="legende">
-                              <h4>Aubèrge Le Pannier</h4>
-                              <p class="prix">Nuit a partir de <strong>23€</strong></p>
-                              <i class="fas fa-star" style="color: #0065FC;" ></i>
-                              <i class="fas fa-star" style="color: #0065FC;"></i>
-                              <i class="fas fa-star" style="color: #0065FC;"></i>
-                              <i class="fas fa-star" style="color: #0065FC;"></i>
-                              <i class="fas fa-star" style="color: #F2F2F2;"></i>
-                           </div>
+                           <figure class="blockp1">
+                              <img class="cannebiere" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="lee">
+                              <figcaption class="legende">
+                                 <h4>Aubèrge Le Pannier</h4>
+                                 <p class="prix">Nuit a partir de <strong>23€</strong></p>
+                                 <i class="fas fa-star" style="color: #0065FC;" ></i>
+                                 <i class="fas fa-star" style="color: #0065FC;"></i>
+                                 <i class="fas fa-star" style="color: #0065FC;"></i>
+                                 <i class="fas fa-star" style="color: #0065FC;"></i>
+                                 <i class="fas fa-star" style="color: #F2F2F2;"></i>
+                              </figcaption>
+                           </figure>
                         </a>
                         <a href="#" class="p1">
-                           <img class="cannebiere" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="zakaria">
-                           <div class="legende">
-                              <h4>Hôtel chez Amina</h4>
-                              <p class="prix">Nuit a partir de 96<strong>€</strong></p>
-                              <i class="fas fa-star" style="color: #0065FC;" ></i>
-                              <i class="fas fa-star" style="color: #0065FC;"></i>
-                              <i class="fas fa-star" style="color: #0065FC;"></i>
-                              <i class="fas fa-star" style="color: #0065FC;"></i>
-                              <i class="fas fa-star" style="color: #0065FC;"></i>
-                           </div>
+                           <figure class="blockp1">
+                              <img class="cannebiere" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="zakaria">
+                              <figcaption class="legende">
+                                 <h4>Hôtel chez Amina</h4>
+                                 <p class="prix">Nuit a partir de 96<strong>€</strong></p>
+                                 <i class="fas fa-star" style="color: #0065FC;" ></i>
+                                 <i class="fas fa-star" style="color: #0065FC;"></i>
+                                 <i class="fas fa-star" style="color: #0065FC;"></i>
+                                 <i class="fas fa-star" style="color: #0065FC;"></i>
+                                 <i class="fas fa-star" style="color: #0065FC;"></i>
+                              </figcaption>
+                           </figure>
                         </a>
                      </div>
                      <!--Afficher plus de resultats-->
@@ -164,7 +176,7 @@
                   <section id="populaire">
                      <!--Titre du block et icon-->
                      <div id="titrePop">
-                        <h3 class="pop">Les plus populaires</h3>
+                        <h2 class="pop">Les plus populaires</h2>
                         <i class="fas fa-chart-line"></i>
                      </div>
                      <!--Affichages de 3 photos-->
@@ -222,51 +234,77 @@
                </div>
                <!--2eme CONTAINER divisé en 4 BLOCK-->
                <section id="activ">
-                  <div id="blockPage">
-                     <h3 id="activites">Activités à Marseille</h3>
+                  <!--<div id="blockPage">-->
+                     <h2 id="activites">Activités à Marseille</h2>
                      <div id="blockPicture">
                         <div id="block1">
                            <a class="lienPicture" href="#">
-                              <img class="port" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="reno">
-                              <p class="titrePort">Vieux Port</p>
+                              <figure class="fig">
+                                 <img class="port" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="reno">
+                                 <figcaption class="figCap">
+                                    <p class="sstitre">Vieux Port</p>
+                                 </figcaption>
+                              </figure>
                            </a>
                         </div>
                         <div id="block2">
                            <div class="Gphoto">
                               <a class="lienPicture" href="#">
-                                 <img class="fort" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="paul">
-                                 <p class="titreFort">Fort de Pomègues</p>
+                                 <figure class="fig">
+                                    <img class="fort" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="paul">
+                                    <figcaption class="figCap">
+                                       <p class="sstitre">Fort de Pomègues</p>
+                                    </figcaption>
+                                 </figure>
                               </a>
                            </div>
                            <div class="Pphoto">
                               <a class="lienPicture" href="#">
-                                 <img class="iles" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="kevin">
-                                 <p class="titreIles">Îles du Frioul</p>
+                                 <figure class="fig">
+                                    <img class="iles" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="kevin">
+                                    <figcaption class="figCap">
+                                       <p class="sstitre">Îles du Frioul</p>
+                                    </figcaption>
+                                 </figure>                                     
                               </a>
                            </div>                        
                         </div>
                         <div id="block3">
                            <a class="lienPicture" href="#">
-                              <img class="calanque" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="kilyan">
-                              <p class="titreCalanque">Parc National des Calanques</p>
+                              <figure class="fig">
+                                 <img class="calanque" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="kilyan">
+                                 <figcaption class="figCap">
+                                    <p class="sstitre">Parc National des Calanques</p>
+                                 </figcaption>
+                              </figure>
                            </a>                        
                         </div>
                         <div id="block4">
                            <div class="Pphoto1">
                               <a class="lienPicture" href="#">
-                                 <img class="dame" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="florian">
-                                 <p class="titreDame">Notre-Dame-de-la-Garde</p>
+                                 <figure class="fig">
+                                    <img class="dame" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="florian">
+                                    <figcaption class="figCap">
+                                       <p class="sstitre">Notre-Dame-de-la-Garde</p>
+                                    </figcaption>
+                                 </figure>
                               </a>                           
                            </div>
                            <div class="Gphoto1">
                               <a class="lienPicture" href="#">
-                                 <img class="parc" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="lena">
-                                 <p class="titreParc">Parc Longchamp</p>
+                                 <figure class="fig">
+                                    <img class="parc" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="lena">
+                                    <figcaption class="figCap">
+                                       <p class="sstitre">Parc Longchamp</p>
+                                    </figcaption>
+                                 </figure>
+                                 
+                                 
                               </a>
                            </div> 
                         </div>
                      </div>
-                  </div>
+                  <!--</div> -->
                </section>
             </main> 
          </div> 
