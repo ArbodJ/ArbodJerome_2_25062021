@@ -61,15 +61,21 @@ header
 }
 .lien, #sign_up /*config des liens*/
 {
-   color: #0065FC;
+   color: black;
    text-decoration: none;
    font-size: 20px;
-   font-weight: bold;
-   padding-top: 33px;
+   padding-top: 32px;
    border-top: 3px #fff solid;
 }
 .lien:hover, #sign_up:hover
 {
+   color: #0065FC;
+   border-top: 3px #0065FC solid;
+}
+.lien:active, #sign_up:active
+{
+   color: #0065FC;
+   font-weight: bold;
    border-top: 3px #0065FC solid;
 }
 /*Barre de recherche*/
@@ -109,12 +115,17 @@ form
 {
    font-family: "Raleway", sans-serif;
    color: white;
-   height: 45px;
+   height: 47px;
    font-weight: bold;
    font-size: 15px;
    border: #0065FC 1px solid;
    border-radius: 0 7px 7px 0;
    background-color: #0065FC;
+   cursor: pointer;
+}
+.button1
+{
+   visibility: hidden;
 }
 /*Filtres de recherche*/
 /* -- MENU FILTRE -- */
@@ -213,7 +224,7 @@ form
 {
    flex: 1 70%;
    background-color: #F2F2F2;
-   border-radius: 15px;
+   border-radius: 20px;
 }
 #hebergement p
 {
@@ -225,7 +236,6 @@ h2.lieu /*Titre*/
    margin: 31px 38px;
    display: flex;
    justify-content: flex-start;
-   
 }
 #photo1 
 {
@@ -249,7 +259,7 @@ h2.lieu /*Titre*/
    height: 305px;
    margin: 15px;
    background-color: white;
-   border-radius: 15px;
+   border-radius: 20px;
    box-shadow: 4px 4px 11px #e2e2e2;
    flex: 0 30%;
    text-decoration: none;
@@ -269,57 +279,11 @@ p.prix
 {
    margin: 8px -14px 0 9px;
 }
-/*BLOCK 1*/
-img.cannebiere
+img.cannebiere /*images*/
 {
    width: 100%;
    height: 200px;
-   border-radius: 15px 15px 0 0;
-   object-fit: cover;
-}
- /*BLOCK 2*/
-img.portHotel
-{
-   width: 96%;
-   height: 200px;
-   border-radius: 15px 15px 0 0;
-   margin: 5px 5px 0 5px;
-   object-fit: cover;
-}
- /*BLOCK 3*/
-img.mouettes
-{
-   width: 96%;
-   height: 200px;
-   border-radius: 15px 15px 0 0;
-   margin: 5px 5px 0 5px;
-   object-fit: cover;
-}
-/*BLOCK 4*/
-img.mer
-{
-   width: 96%;
-   height: 200px;
-   border-radius: 15px 15px 0 0;
-   margin: 5px 5px 0 5px;
-   object-fit: cover;
-}
-/*BLOCK 5*/
-img.pannier
-{
-   width: 96%;
-   height: 200px;
-   border-radius: 15px 15px 0 0;
-   margin: 5px 5px 0 5px;
-   object-fit: cover;
-}
-/*BLOCK 6*/
-img.amina
-{
-   width: 96%;
-   height: 200px;
-   border-radius: 15px 15px 0 0;
-   margin: 5px 5px 0 5px;
+   border-radius: 20px 20px 0 0;
    object-fit: cover;
 }
 /*lien "Afficher plus"*/
@@ -341,7 +305,7 @@ img.amina
 {
    flex: 1 30%;
    background-color: #F2F2F2;
-   border-radius: 15px;
+   border-radius: 20px;
    margin-left: 35px;
 }
 .prix1
@@ -350,7 +314,7 @@ img.amina
 }
 .note
 {
-   margin-top: 55px;
+   margin: 55px 0 0 -9px;
 }
 #titrePop /*Titre*/
 {
@@ -374,7 +338,7 @@ i.fas.fa-chart-line
    background-color: white;
    width: 100%;
    padding: 5px;
-   border-radius: 15px;
+   border-radius: 20px;
    box-shadow: 4px 4px 11px #e2e2e2;
    display: flex;
    flex-direction: row;
@@ -384,7 +348,7 @@ i.fas.fa-chart-line
    flex: 1 40%;
    max-width: 40%;
    height: 100%;
-   border-radius: 15px 0 0 15px;
+   border-radius: 20px 0 0 20px;
    object-fit: cover;
 }
 .linkp2
@@ -433,12 +397,12 @@ i.fas.fa-chart-line
    background-color: #fff;
    border-radius: 20px;
    box-shadow: 4px 4px 11px #e2e2e2;
-   flex: 0 22%;
+   flex: 0 24%;
 }
 img.port
 {
    border-radius: 20px 20px 0 0;
-   height: 650px;
+   height:550px;
    width: 100%;
    object-fit: cover;  
 }
@@ -457,7 +421,7 @@ p.titrePort
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   flex: 0 22%;
+   flex: 0 24%;
 }
 .Gphoto/*Grande photo*/
 {
@@ -468,7 +432,7 @@ p.titrePort
 img.fort
 {
    border-radius: 20px 20px 0 0;
-   height: 330px;
+   height: 290px;
    width: 100%;
    margin: 0 auto;
    object-fit: cover;  
@@ -492,7 +456,7 @@ img.fort
 img.iles
 {
    border-radius: 20px 20px 0 0;
-   height: 170px;
+   height: 190px;
    width: 100%;
    margin: 0 auto;
    object-fit: cover;  
@@ -511,13 +475,13 @@ p.titreIles
    background-color: #fff;
    border-radius: 20px;
    box-shadow: 4px 4px 11px #e2e2e2;
-   flex: 0 22%;
+   flex: 0 24%;
 }
 img.calanque
 {
    border-radius: 20px 20px 0 0;
    width: 100%;
-   height: 650px;
+   height: 550px;
    object-fit: cover;
 }
 p.titreCalanque
@@ -534,7 +498,7 @@ p.titreCalanque
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   flex: 0 22%;
+   flex: 0 24%;
 }
 /*Petite photo*/
 .Pphoto1
@@ -547,7 +511,7 @@ img.dame
 {
    border-radius: 20px 20px 0 0;
    width: 100%;
-   height: 170px;
+   height: 190px;
    object-fit: cover;
    object-position: 0px -21px;  
 }
@@ -570,7 +534,7 @@ img.parc
 {
    border-radius: 10px 10px 0 0;
    width: 100%;
-   height: 330px;  
+   height: 290px;  
    object-fit: cover;
 }
 .titreParc
@@ -849,16 +813,21 @@ footer
    }
    .button
    {
-      margin-left: -10px;
-      font-size: 0;
-      width: 50px;
+      display: none;
+   }
+   .button1 /*i.fas.fa-search*/
+   { 
+      visibility: visible;
+      margin: 0px 0 1px -6px;
+      padding: 9px 1px 9px 1px;
+      color: white;
+      width: 46px;
+      height: 46px;
+      font-size: 24px;
+      border: #0065FC 1px solid;
       border-radius: 10px;
-      background-image: url(images/logo/search-solid.png);
-      color:#fff;
       background-color: #0065FC;
-      background-position: 11px 11px;
-      background-repeat: no-repeat;
-      background-size: 25px 20px;
+      cursor: pointer;
    }
    /*LIEN ANCRE*/
    #logo-ancre
